@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="arquitectura">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="../controllers/controller.js"></script>
+	<!--css Boostrap--><!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body ng-controller="ctrlapp">
+
+	<!-- NAV -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">RED SOCIAL UNIAJC</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="#">Home</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+      <ul >
+        <div class="nav navbar-nav navbar-right">
+           <li>
+              <div class="iniciarSesi">
+              <div class="col-xs-4 col-sm-4 col-md-4">
+              <input type="email" name="correo" id="correo" class="form-control input-sm" placeholder="Correo Electronico">
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4">
+              <input type="password" name="contrasenia" id="contrasenia" class="form-control input-sm" placeholder="Contraseña">
+              </div>
+      
+              <div class="col-xs-4 col-sm-4 col-md-4">
+              <button type="submit" class="btn btn-default">Iniciar Sesion </button>
+            </li>
+              </div>
+       
+              </div>
+      </ul>
+
+
+      <!-- Buscador
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar amigo">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>-->
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--Crear usuario-->
+
+    <div class="jumbotron text-center">
+        <h2>Bienvenido</h2>
+    </div>
+    
+    <div class="container">
+      <div class="row centered-form">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Crear Cuenta <small>¡Gratis!</small></h3>
+      </div>
+        <div class="panel-body">
+        <form role="form">
+        <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+          <input type="text" name="nombre" id="nombre" class="form-control input-sm" placeholder="Nombres">
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+        <input type="text" name="apellido" id="apellido" class="form-control input-sm" placeholder="Apellidos">
+        </div>
+        </div>
+        </div>
+
+        <div class="form-group">
+        <input type="email" name="correo" id="correo" class="form-control input-sm" placeholder="Correo Electronico">
+        </div>
+
+        <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+        <input type="password" name="contrasenia" id="contrasenia" class="form-control input-sm" placeholder="Contraseña">
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+        <input type="password" name="Confirmar_Contrasenia" id="Confirmar_Contrasenia" class="form-control input-sm" placeholder="Confirmar Contraseña">
+        </div>
+        </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Carrera Actual
+            <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ingenieria</a></li>
+                <li><a href="#">Administracion</a></li>
+                <li><a href="#">Contabilidad</a></li>
+              </ul>
+        </div>
+  
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sede Uniajc
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Norte</a></li>
+            <li><a href="#">Sur</a></li>
+          </ul>
+        </div>
+        </div>
+
+
+      </div>
+   
+    <input type="submit" value="Registrar" class="btn btn-info btn-block">
+   
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<!-- JQuery BOOSTRAP-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
