@@ -29,7 +29,7 @@ USE `redsocial`;
 --
 
 CREATE TABLE IF NOT EXISTS `blogs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `added_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -38,6 +38,9 @@ CREATE TABLE IF NOT EXISTS `blogs` (
 --
 -- Dumping data for table `blogs`
 --
+
+INSERT INTO `blogs` (`id`, `title`, `description`, `added_date`) VALUES
+(1, 'Lorem Ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam urna, venenatis a ullamcorper a, euismod eget mauris. Nullam tempor in turpis accumsan porta. Quisque eget dignissim est. Sed leo ex, dictum tincidunt felis at, semper dignissim magna. In hac habitasse platea dictumst.', '2016-01-04 07:13:06');
 
 
 --
