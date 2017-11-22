@@ -1,0 +1,85 @@
+<!--Crear usuario-->
+<div class="container">
+  <div class="jumbotron text-center">
+    <h2>Bienvenido {{usuario.nombre}}</h2>
+  </div>
+  
+
+  <div class="alert alert-success" role="alert" ng-if="notification.success">{{ notification.message }}</div>
+  <div class="alert alert-error" role="alert" ng-if="notification.error">{{ notification.message }}</div>
+ 
+  <div class="container">
+    <div class="row centered-form">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Crear Cuenta
+              <small>¡Gratis!</small>
+            </h3>
+          </div>
+          <div class="panel-body">
+
+            <form class="form-horizontal" id="usuarioForm" ng-submit="registrarUsuario(user)">
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div class="form-group">
+                    <input type="text" required ng-model="user.nombre" class="form-control input-sm" placeholder="Nombres">
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div class="form-group">
+                    <input type="text" required ng-model="user.apellido" class="form-control input-sm" placeholder="Apellidos">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="email" required ng-model="user.email" class="form-control input-sm" placeholder="Correo Electronico">
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div class="form-group">
+                    <input type="password" required ng-model="user.password" class="form-control input-sm" placeholder="Contraseña">
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6" hidden>
+                  <div class="form-group">
+                    <input type="text" class="form-control input-sm" placeholder="Confirmar Contraseña">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" for="rol">Carrera Actual</span>
+                  <select class="form-control" name="rol" ng-model="user.carrera">
+                    <option value="Ingenieria">Ingenieria</option>
+                    <option value="Administracion">Administracion</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" for="h">Sede Uniajc</span>
+                  <select class="form-control" name="h" ng-model="user.sede">
+                    <option value="Sur">Sur</option>
+                    <option value="Norte">Norte</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <button type="submit" value="submit" class="btn btn-primary">Registrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

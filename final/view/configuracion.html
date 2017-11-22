@@ -1,0 +1,15 @@
+<!--Crear usuario-->
+<div class="container">
+ <div class="jumbotron text-center">
+  <h2>Configuracion</h2>
+
+
+  <div class="alert alert-success" role="alert" ng-if="notification.success">{{ notification.message }}</div>
+  <div class="alert alert-error" role="alert" ng-if="notification.error">{{ notification.message }}</div>
+
+  <div class="container">
+    <button class="btn btn-danger" ng-click="removeData(usuario.id)">Eliminar cuenta  <span class="glyphicon glyphicon-remove"></span></button>
+  </div>
+ </div>
+
+</div>
