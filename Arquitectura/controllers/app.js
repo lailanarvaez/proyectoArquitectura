@@ -3,13 +3,17 @@ angular.module('app', ['ngRoute', 'controller'])
 .config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'templates/home.html'
+		templateUrl: 'view/registrar.html',
+		controller: 'RegistrarCtrl'
+	})
+	.when('/home', {
+		templateUrl: 'view/home.html'
 	})
 	.when('/blog', {
-		templateUrl: 'templates/blog.html',
+		templateUrl: 'view/blog.html',
 		controller: 'BlogCtrl'
 	})
 	.otherwise({
-		templateUrl: 'templates/404.html'
+		templateUrl: 'view/404.html'
 	})
 })
